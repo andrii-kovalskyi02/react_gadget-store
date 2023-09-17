@@ -25,4 +25,11 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        moduleDirectory: ['node_modules', 'src'],
+      },
+    },
+  },
 };
